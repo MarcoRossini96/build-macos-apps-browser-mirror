@@ -1,6 +1,6 @@
 {
   "name": "build-macos-apps-browser-mirror",
-  "version": "0.1.0+codex.20260820224857",
+  "version": "0.1.0+codex.20260820225055",
   "description": "Open-source MIT derivative of OpenAI's Build macOS Apps plugin, adding a crisp local-only browser mirror for a selected native macOS window.",
   "author": {
     "name": "Marco Rossini"
@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "Build macOS Apps + Browser Mirror",
     "shortDescription": "Build macOS apps and inspect one native window in a crisp local browser mirror.",
-    "longDescription": "Community-maintained MIT derivative of OpenAI's Build macOS Apps plugin. It retains the native macOS build and debugging workflows, and adds a ScreenCaptureKit-based, read-only browser mirror for one user-selected app window. Frames stay on localhost.",
+    "longDescription": "Independent, community-maintained MIT derivative of OpenAI's Build macOS Apps plugin. It retains the native macOS build and debugging workflows, and adds a ScreenCaptureKit-based, read-only browser mirror for one user-selected app window. Frames stay on localhost; the project is not affiliated with or endorsed by OpenAI.",
     "developerName": "Marco Rossini",
     "category": "Developer Tools",
     "capabilities": [
