@@ -1,16 +1,26 @@
 {
   "name": "build-macos-apps-browser-mirror",
-  "version": "0.1.0+codex.20260820224058",
-  "description": "A local MIT-licensed derivative of OpenAI's Build macOS Apps plugin with a clean localhost browser mirror for native app windows.",
+  "version": "0.1.0+codex.20260820224857",
+  "description": "Open-source MIT derivative of OpenAI's Build macOS Apps plugin, adding a crisp local-only browser mirror for a selected native macOS window.",
   "author": {
     "name": "Marco Rossini"
   },
   "license": "MIT",
+  "homepage": "https://github.com/MarcoRossini96/build-macos-apps-browser-mirror",
+  "repository": "https://github.com/MarcoRossini96/build-macos-apps-browser-mirror",
+  "keywords": [
+    "macos",
+    "swiftui",
+    "appkit",
+    "xcode",
+    "screencapturekit",
+    "browser-mirror"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Build macOS Apps + Browser Mirror",
-    "shortDescription": "Build and mirror native macOS app windows in Codex Browser.",
-    "longDescription": "Derived from OpenAI's MIT-licensed Build macOS Apps plugin. Adds a clean, local-only browser mirror for a selected native macOS app window.",
+    "shortDescription": "Build macOS apps and inspect one native window in a crisp local browser mirror.",
+    "longDescription": "Community-maintained MIT derivative of OpenAI's Build macOS Apps plugin. It retains the native macOS build and debugging workflows, and adds a ScreenCaptureKit-based, read-only browser mirror for one user-selected app window. Frames stay on localhost.",
     "developerName": "Marco Rossini",
     "category": "Developer Tools",
     "capabilities": [
@@ -18,6 +28,13 @@
       "Read",
       "Write"
     ],
-    "defaultPrompt": "Build or debug a macOS app, or mirror its native window in Codex Browser."
+    "websiteURL": "https://github.com/MarcoRossini96/build-macos-apps-browser-mirror",
+    "brandColor": "#1577FF",
+    "composerIcon": "./assets/build-macos-apps-small.svg",
+    "logo": "./assets/app-icon.png",
+    "screenshots": [
+      "./assets/browser-mirror-cover.png"
+    ],
+    "defaultPrompt": "Build or debug a native macOS app, then mirror one selected window in Codex Browser."
   }
 }

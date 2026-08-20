@@ -1,6 +1,24 @@
 # Build macOS Apps + Browser Mirror Plugin
 
-An open-source Codex plugin derived from OpenAI's MIT-licensed `build-macos-apps` plugin. It adds a high-density, localhost-only browser mirror for one native macOS app window.
+![Two native-style windows connected by a local, private browser mirror](assets/browser-mirror-cover.png)
+
+Build, run, and debug native macOS apps—and view one selected app window in
+Codex Browser through a crisp, local-only mirror.
+
+> This is a community-maintained derivative of OpenAI's
+> [`build-macos-apps`](https://github.com/openai/plugins/tree/main/plugins/build-macos-apps)
+> plugin. The upstream work and all derivative additions are documented in
+> [ATTRIBUTION.md](ATTRIBUTION.md).
+
+## Highlights
+
+- Keeps the upstream shell-first macOS build, debugging, signing, SwiftUI, and
+  AppKit workflows.
+- Adds `macos-window-browser`, a high-density ScreenCaptureKit mirror for one
+  selected native macOS window.
+- Opens only a capability URL on `127.0.0.1`; frames remain in memory and are
+  never sent to an external service or written to disk.
+- Uses a clean, read-only browser viewer so the native UI remains the focus.
 
 ## Install
 
@@ -96,7 +114,13 @@ skills/macos-window-browser/scripts/macos_window_browser.sh --app-name "CodexApp
 
 Open the printed `http://127.0.0.1:<port>/<token>/` URL in Codex Browser. The viewer is an intentionally clean, read-only preview: no selection rectangles or UI annotations are drawn over the native window. The mirror requests a 2× source buffer, capped at 2560 pixels wide, with high-quality JPEG encoding so compact text remains legible in the browser. The browser retrieves its frames through ScreenCaptureKit without writing them to disk or transmitting them over the network. macOS Screen Recording permission is required for the terminal or Codex process.
 
-## License and attribution
+## Provenance, license, and trademarks
 
-Licensed under the [MIT License](LICENSE). See [NOTICE](NOTICE) for the
-upstream OpenAI plugin attribution.
+The retained build-macos-apps workflows originate from OpenAI's public plugin
+repository; `macos-window-browser` and the local mirror helper are derivative
+additions by Marco Rossini. The project is released under the
+[MIT License](LICENSE). See [ATTRIBUTION.md](ATTRIBUTION.md) and [NOTICE](NOTICE)
+for the source, asset, and license record.
+
+This independent community project is not created by, affiliated with, or
+endorsed by OpenAI. OpenAI and Codex are trademarks of their respective owners.
