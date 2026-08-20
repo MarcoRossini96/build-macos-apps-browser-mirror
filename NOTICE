@@ -1,6 +1,18 @@
-This plugin is derived from OpenAI's `plugins/build-macos-apps` plugin.
+Build macOS Apps + Browser Mirror
+Copyright (c) 2026 Marco Rossini
 
-Original source: https://github.com/openai/plugins
-Original plugin license: MIT
+This repository is a derivative of OpenAI's public `build-macos-apps` plugin.
 
-Changes in this derivative add the `macos-window-browser` skill and its local-only native-window mirror helper.
+Upstream source:
+https://github.com/openai/plugins/tree/main/plugins/build-macos-apps
+
+The upstream plugin manifest declares an MIT license. Retained upstream
+workflows and assets are attributed to OpenAI; the derivative additions are
+identified in ATTRIBUTION.md.
+
+Derivative additions include the `macos-window-browser` skill, its local-only
+native window mirror helper, browser-viewer documentation, marketplace metadata,
+and the original cover image.
+
+OpenAI and Codex are trademarks of their respective owners. This independent
+community project is not created by, affiliated with, or endorsed by OpenAI.
