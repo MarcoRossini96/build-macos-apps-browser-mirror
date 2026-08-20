@@ -1,0 +1,6 @@
+This plugin is derived from OpenAI's `plugins/build-macos-apps` plugin.
+
+Original source: https://github.com/openai/plugins
+Original plugin license: MIT
+
+Changes in this derivative add the `macos-window-browser` skill and its local-only native-window mirror helper.

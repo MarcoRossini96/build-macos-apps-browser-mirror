@@ -1,0 +1,20 @@
+{
+  "name": "marco-macos-plugins",
+  "interface": {
+    "displayName": "Marco's macOS Codex Plugins"
+  },
+  "plugins": [
+    {
+      "name": "build-macos-apps-browser-mirror",
+      "source": {
+        "source": "local",
+        "path": "."
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

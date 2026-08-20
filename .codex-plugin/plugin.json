@@ -1,0 +1,23 @@
+{
+  "name": "build-macos-apps-browser-mirror",
+  "version": "0.1.0+codex.20260820224058",
+  "description": "A local MIT-licensed derivative of OpenAI's Build macOS Apps plugin with a clean localhost browser mirror for native app windows.",
+  "author": {
+    "name": "Marco Rossini"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Build macOS Apps + Browser Mirror",
+    "shortDescription": "Build and mirror native macOS app windows in Codex Browser.",
+    "longDescription": "Derived from OpenAI's MIT-licensed Build macOS Apps plugin. Adds a clean, local-only browser mirror for a selected native macOS app window.",
+    "developerName": "Marco Rossini",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Build or debug a macOS app, or mirror its native window in Codex Browser."
+  }
+}
